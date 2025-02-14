@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+
+nav {
+  height: fit-content;
+}
+
+nav ul.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul.nav-list li {
+  color: #fff;
+  user-select: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+}
+
+img.nav-icon {
+  width: auto;
+  height: 100%;
+  /* display: inline-block; */
+  /* margin-top: auto; */
+}
+
+nav ul.nav-list li:active {
+}
+nav ul.nav-list li:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
