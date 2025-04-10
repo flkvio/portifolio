@@ -1,6 +1,7 @@
 header.header {
   background-color: var(--primary-color);
   height: fit-content;
+  /* box-shadow: 0 1px 1px  var(--shadow-color); */
 }
 
 

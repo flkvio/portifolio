@@ -18,19 +18,19 @@ nav ul.nav-list li {
   display: inline-block;
   font-size: 1.5rem;
   text-transform: uppercase;
-  transition: all 0.1s ease;
+  transition: filter 0.1s ease;
 }
 
 img.nav-icon {
   width: auto;
   height: 100%;
-  /* display: inline-block; */
-  /* margin-top: auto; */
 }
 
 nav ul.nav-list li:active {
 }
 nav ul.nav-list li:hover {
+  transition: filter 0.1s ease;
+
   filter: brightness(0.8);
   cursor: pointer;
 }

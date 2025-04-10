@@ -2,6 +2,8 @@ main.main div.main-container.home {
   background-color: var(--secondary-color);
   font-size: 1.25rem;
   height: fit-content;
+  width: var(--container-size);
+  /* min-width: 666px; */
 }
 
 .info-page {
@@ -20,10 +22,9 @@ main.main div.main-container.home {
   flex-direction: column;
 }
 
-.info-text {
-  /* min-height: 100%; */
-  
-}
+/* .info-text {
+   min-height: 100%; 
+} */
 
 .info-stack {
   display: flex;
@@ -42,6 +43,25 @@ main.main div.main-container.home {
   transition: all 0.2s ease;
 }
 
-.stack-icon:hover{
+.stack-icon:hover {
   transform: scale(1.1);
+}
+
+main.main div.alt-card-container {
+  width: var(--container-size);
+  display: flex;
+  margin: 1rem auto;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+
+  .info-page {
+    align-items: center;
+   /* flex-direction: column; */
+  }
+
+  main.main div.alt-card-container {
+    flex-direction: column;
+  }
 }

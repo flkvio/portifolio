@@ -3,6 +3,7 @@ main.main {
 }
 
 main.main div.main-container {
+
   width: var(--container-size);
   margin: 0 auto;
   padding: 1rem 2rem;

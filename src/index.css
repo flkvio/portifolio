@@ -7,6 +7,7 @@
   --secondary-color: #bbddfb;
   --tertiary-color: #1b15c0;
   /* --tertiary-color: #0f4685; */
+  --shadow-color: #00000015;
 }
 
 .dark-mode:root {
@@ -18,12 +19,11 @@
   /* --primary-color: #90caf9; Cor primária mais clara */
   --secondary-color: #08274b; /* Cor secundária mais escura */
   --tertiary-color: #204874; /* Cor terciária mais escura */
+  --shadow-color: #f1f1f120;
 }
 
 html {
   font-size: 1rem;
-
-  
 }
 
 * {
@@ -32,6 +32,12 @@ html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: var(--text-color, black);
+}
+
+button,
+input,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -47,4 +53,15 @@ body {
       min-content,
       max-content
     );
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --container-size: 80%;
+  }
+}
+@media (max-width: 760px) {
+  :root {
+    --container-size: 90%;
+  }
 }

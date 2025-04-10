@@ -1,4 +1,5 @@
 footer.footer {
+  padding: 0.3rem;
   margin-top: auto;
   background-color: var(--tertiary-color);
 }
@@ -11,5 +12,5 @@ footer.footer div.footer-container {
 }
 
 footer.footer div.footer-container span {
-    color: var(--alt-text-color);
+  color: var(--alt-text-color);
 }
