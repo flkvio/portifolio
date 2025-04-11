@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { PortifolioContext } from "../../context/PortifolioContext";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
-import "./style.css";
+import style from "./Projetos.module.css";
 
 export const Projetos = () => {
   const { projects, filteredProjects, setFilteredProjects } =
@@ -24,7 +24,7 @@ export const Projetos = () => {
   };
 
   return (
-    <section className="project-container">
+    <section className={style.Projetos}>
       <h2>Projetos!</h2>
       <div className="filter-buttons-container">
         <button onClick={handleClickOnFilterButton}>Mostrar todos</button>

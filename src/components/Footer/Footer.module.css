@@ -1,0 +1,16 @@
+.Footer {
+  padding: 0.3rem;
+  margin-top: auto;
+  background-color: var(--tertiary-color);
+
+  .container {
+    width: var(--container-size);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    span {
+      color: var(--alt-text-color);
+    }
+  }
+}

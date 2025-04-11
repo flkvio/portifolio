@@ -1,9 +1,10 @@
 import { FaExternalLinkAlt, FaGithubAlt } from "react-icons/fa";
-import "./styles.css";
+// import "./styles.css";
+import style from "./ProjectCardAlt.module.css";
 
 export const ProjectCardAlt = ({ title, image, description, page, repo }) => {
   return (
-    <article className="project-card-alt">
+    <article className={style.ProjectCardAlt}>
       <h2 className="project-card-alt-title">{title}</h2>
       <img className="project-card-alt-image" src={image} alt={description} />
       <span className="project-card-alt-description">{description}</span>

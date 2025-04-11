@@ -4,16 +4,15 @@ import htmlIcon from "../../../../assets/html5-brands-solid.svg";
 import sonic from "../../../../assets/image.png";
 import jsIcon from "../../../../assets/js-brands-solid.svg";
 import reactIcon from "../../../../assets/react-brands-solid.svg";
-import {} from "./style.css";
+import style from "./Home.module.css";
 import { ProjectCardAlt } from "../../../ProjectCardAlt/ProjectCardAlt";
-import fccTributePage from "../../../../assets/fcc-tribute-page.png"
-
+import fccTributePage from "../../../../assets/fcc-tribute-page.png";
 
 export const Home = () => {
   return (
-    <>
-      <div className="main-container home">
-        <article className="info-page">
+    <div className={style.Home}>
+      <div className={style.mainContainer}>
+        <article className={style.infoPage}>
           <img
             onContextMenu={(event) => {
               event.preventDefault();
@@ -57,7 +56,7 @@ export const Home = () => {
           </section>
         </article>
       </div>
-      <div className="alt-card-container">
+      <div className={style.altCardContainer}>
         <ProjectCardAlt
           title="freeCodeCamp tribute page"
           description="Esse é o segundo dos cinco projetos necessários para concluir a certificação de Responsive Web Design do freeCodeCamp."
@@ -76,6 +75,6 @@ export const Home = () => {
           image="https://picsum.photos/200/300"
         />
       </div>
-    </>
+    </div>
   );
 };

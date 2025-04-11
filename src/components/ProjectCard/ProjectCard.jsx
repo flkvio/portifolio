@@ -1,8 +1,10 @@
 import { FaExternalLinkAlt, FaGithubAlt } from "react-icons/fa";
-import "./styles.css"
+// import "./styles.css"
+import style from "./ProjectCard.module.css";
+
 export const ProjectCard = ({ project }) => {
   return (
-    <article className="project-card" key={project.id}>
+    <article className={style.ProjectCard} key={project.id}>
       <span className="project-date">
         {String(project.created_at)
           .split("T")[0]
@@ -20,7 +22,7 @@ export const ProjectCard = ({ project }) => {
         {project.description ? project.description : "Description"}
       </span>
       <div className="buttons-topics-container">
-        <div className="project-buttons-container">
+        <div className={style.projectButtonsContainer}>
           {project.homepage ? (
             <button
               className="project-button"

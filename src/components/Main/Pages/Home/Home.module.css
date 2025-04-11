@@ -1,0 +1,69 @@
+.Home {
+  .mainContainer {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--secondary-color);
+    font-size: 1.25rem;
+    height: fit-content;
+    width: var(--container-size);
+    /* min-width: 666px; */
+
+    article {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+
+        div:nth-of-type(2) {
+          display: flex;
+          background-color: whitesmoke;
+          border-radius: 0.5rem;
+          width: fit-content;
+          height: fit-content;
+          margin: auto 0 0 auto;
+          gap: 1rem;
+          padding: 0.25rem;
+
+          img {
+            width: 3rem;
+            height: 3rem;
+            transition: all 0.2s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .altCardContainer {
+    width: var(--container-size);
+    display: flex;
+    margin: 1rem auto;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .infoPage {
+    align-items: center;
+    /* flex-direction: column; */
+  }
+
+  .altCardContainer {
+    flex-direction: column;
+  }
+}

@@ -3,7 +3,7 @@ import { PortifolioContext } from "../../context/PortifolioContext";
 import { Projetos } from "../Projetos/Projetos";
 import { Contact } from "./Pages/Contact/Contact";
 import { Home } from "./Pages/Home/Home";
-import "./style.css";
+import style from "./Main.module.css";
 
 export const Main = () => {
   const { currentPage } = useContext(PortifolioContext);
@@ -18,14 +18,20 @@ export const Main = () => {
             <Projetos />
           </div>
         );
-      default:
+      case "/contato":
         return (
           <div className="main-container">
             <Contact />
           </div>
         );
+      default:
+        return (
+          <div className="main-container">
+            <Home />
+          </div>
+        );
     }
   };
 
-  return <main className="main">{renderContent()}</main>;
+  return <main className={style.Main}>{renderContent()}</main>;
 };

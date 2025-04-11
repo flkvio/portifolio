@@ -1,0 +1,66 @@
+.ProjectCard {
+  border: 1px solid var(--shadow-color);
+  /* box-shadow: 1px 1px 4px var(--shadow-color); */
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+
+  span[class="project-date"] {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  h3 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.5rem;
+  }
+
+  div[class="buttons-topics-container"] {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .projectButtonsContainer {
+      margin-top: 0.7rem;
+      height: fit-content;
+      display: flex;
+      gap: 1rem;
+
+      button {
+        padding: 0.3rem;
+        border: 1px solid var(--shadow-color);
+        border-radius: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: transform 0.15s ease;
+        color: var(--text-color);
+        background-color: transparent;
+        &:hover {
+          transform: translateY(-0.05rem);
+          transition: transform 0.15s ease;
+        }
+      }
+    }
+
+    div[class="project-topics"] {
+      display: flex;
+      gap: 0.5rem;
+
+      span {
+        color: gray;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid var(--shadow-color);
+        border-radius: 0.9rem;
+        font-size: 0.8rem;
+        /* flex-direction: row; */
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.Navbar {
+  height: fit-content;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+
+    li {
+      color: #fff;
+      user-select: none;
+      display: inline-block;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      transition: filter 0.1s ease;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    li:hover {
+      transition: filter 0.1s ease;
+
+      filter: brightness(0.8);
+      cursor: pointer;
+    }
+  }
+}

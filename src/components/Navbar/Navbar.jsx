@@ -2,7 +2,7 @@ import { React, useContext } from "react";
 import moon from "../../assets/moon-solid.svg";
 import sun from "../../assets/sun-solid.svg";
 import { PortifolioContext } from "../../context/PortifolioContext";
-import {} from "./style.css";
+import style from "./Navbar.module.css";
 
 export function Navbar() {
   const { changePage, handleDarkMode, darkMode } =
@@ -13,22 +13,21 @@ export function Navbar() {
   };
 
   return (
-    <nav>
-      <ul className="nav-list">
-        <li className="nav-item" id="inicio" onClick={handleClick}>
+    <nav className={style.Navbar}>
+      <ul>
+        <li id="inicio" onClick={handleClick}>
           Início
         </li>
-        <li className="nav-item" id="projetos" onClick={handleClick}>
+        <li id="projetos" onClick={handleClick}>
           Projetos
         </li>
-        <li className="nav-item" id="contato" onClick={handleClick}>
+        <li id="contato" onClick={handleClick}>
           Contato
         </li>
-        <li className="nav-item-icon">
+        <li>
           <img
-            className="nav-icon"
             src={darkMode ? sun : moon}
-            alt="a"
+            alt={darkMode ? "Icone de Sol" : "Icone de Lua"}
             onClick={() => {
               handleDarkMode();
             }}
